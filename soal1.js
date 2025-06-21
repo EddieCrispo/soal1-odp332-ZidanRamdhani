@@ -1,21 +1,15 @@
 // Jumlahkan semua angka genap dalam array berikut
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-let resultOne
+let resultOne = 0
 
-// Buat function untuk menjumlahkan angka genap
-function sumEvenNumbers(array) {
-  let resultOne = 0
-
-  for (let index = 0; index < array.length; index++) {
-    if (array[index] % 2 === 0) {
-      resultOne = resultOne + array[index]
-    }
+for (let index = 0; index < numbers.length; index++) {
+  if (numbers[index] % 2 === 0) {
+    resultOne = resultOne + numbers[index]
   }
-  // console.log(numbers)
-  console.log(`Hasil penjumlahan semua angka genap pada array "numbers" adalah : ${resultOne}`)
 }
 
-sumEvenNumbers(numbers)
+console.log(`Hasil penjumlahan semua angka genap pada array "numbers" adalah : ${resultOne}`)
+// sumEvenNumbers(numbers)
 
 const numbersTwo = [1, 2, 3, 4, 5, 6, 7, 8];
 //Tambahkan semua angka ganjil dalam array dan kembalikan hasilnya.
