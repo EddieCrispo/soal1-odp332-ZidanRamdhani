@@ -94,28 +94,39 @@ console.log(scoreReport("sembilan puluh")); // invalid input
  */
 
 // Sesuai Contoh Output
-function loopCheckOddEven(n) {
-  if (typeof n !== "number" || n < 1) {
-    console.log("invalid input");
-    return;
-  }
+// function loopCheckOddEven(n) {
+//   if (typeof n !== "number" || n < 1) {
+//     console.log("invalid input");
+//     return;
+//   }
 
-  for (let i = 1; i <= n; i++) {
-    if (i % 2 === 0) {
-      console.log(i + " => Bilangan Genap");
-    } else {
+//   for (let i = 1; i <= n; i++) {
+//     if (i % 2 === 0) {
+//       console.log(i + " => Bilangan Genap");
+//     } else {
+//       console.log(i + " => Bilangan Ganjil");
+//     }
+//   }
+// }
+
+// Sesuai Instruksi Soal
+function loopCheckOddEven() {
+  for (let i = 1; i <= 20; i++) {
+    if (i % 2 !== 0) {
       console.log(i + " => Bilangan Ganjil");
     }
   }
 }
 
-loopCheckOddEven(5)
+// loopCheckOddEven(5)
 // 1 => Bilangan Ganjil
 // 2 => Bilangan Genap
 // 3 => Bilangan Ganjil
 // 4 => Bilangan Genap
 // 5 => Bilangan Ganjil
-loopCheckOddEven("lima") // invalid input
+// loopCheckOddEven("lima") // invalid input
+
+loopCheckOddEven(); // Menampilkan bilangan ganjil dari 1 sampai 20
 
 
 
